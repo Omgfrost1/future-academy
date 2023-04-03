@@ -1,0 +1,31 @@
+.inner{
+    padding: 60px 0 40px;
+    .title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 42px;
+        max-width: 750px;
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        max-width: 880px;
+        width: 100%;
+        align-items: left;
+        .number{
+            font-size: 86px;
+            font-weight: 700;
+            line-height: 105px;
+            color: #27AAE1 ;
+            margin-bottom: 5px;
+            Stroke: Linear-Gradient(#F7941D  0%#27AAE1  100%);
+        }
+        .desc{
+            font-size: 20px;
+            max-width: 150px;
+            width: 100%;
+        }
+    }
+}

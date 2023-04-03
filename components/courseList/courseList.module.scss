@@ -1,0 +1,53 @@
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    .item{
+        background-color: #fff;
+        position: relative;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 16px 18px;
+        margin-bottom: 20px;
+        z-index: 3;
+
+        &:before{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+        filter: blur(5px);
+        transition: opacity 0.3s;
+        border-radius: 10px;
+        z-index: -1;
+        transition: all 0.2s ease-in-out;
+        }
+
+        &:after{
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            border-radius: inherit;
+        }
+
+        &:hover{
+            &::before{
+                filter: blur(15px);
+            }
+        }
+        
+        &:not(:last-child){
+            margin-right: 20px;
+            
+        }
+    }
+}

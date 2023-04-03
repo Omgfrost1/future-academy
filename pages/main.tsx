@@ -1,9 +1,18 @@
 import { Academy } from '../components/sections/academy/academy';
+import { Choise } from '../components/sections/choise/choise';
+import { Video } from '../components/sections/video/video';
+import { Stats } from '../components/sections/stats/stats';
+
+import vr from '../components/sections/video/vr.jpg';
+
 
 export const Main = () => {
     return (
         <>
             <Academy/>
+            <Choise/>
+            <Video img={vr} link={'https://youtu.be/Q6Lru2ZhaAE'}/>
+            <Stats/>
         </>
     );
 };

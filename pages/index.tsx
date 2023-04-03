@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Header } from '../components/header/header';
 import { Footer } from '../components/footer/footer';
 import { Main } from './main'
-import styles from '@/styles/Home.module.css'
+import styles from '../scss/index.module.scss';
 
 
 
@@ -16,8 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
+      <main className={styles.main}>
       <Main/>
       <Footer/>
+      </main>
     </>
   )
 }
