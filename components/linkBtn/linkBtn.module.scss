@@ -1,0 +1,17 @@
+.button{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    display: inline-flex;
+    .text{
+        margin-right: 10px;
+    }
+    img{
+        margin: 0 !important;
+    }
+}

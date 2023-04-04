@@ -1,0 +1,43 @@
+.inner{
+    padding: 25px 40px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7BC75;
+    border-radius: 20px;
+    .right{
+        display: flex;
+        justify-content: space-between;
+        .date{
+            margin-right: 52px;
+            .num{
+                font-size: 86px;
+                font-weight: 700;
+                line-height: 88px;
+            }
+            .mounth{
+                display: block;
+                font-size: 26px;
+                margin-top: -10px;
+            }
+        }
+        
+        .content{
+            max-width: 540px;
+            width: 100%;
+            margin-top: 12px;
+            .title{
+                font-size: 36px;
+                line-height: 26px;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+            .text{
+                font-weight: 400;
+                font-size: 18px;
+                color: #333333;
+                line-height: 26px;
+            }
+        }
+    }
+}
