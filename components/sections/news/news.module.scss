@@ -1,5 +1,5 @@
 .inner{
-    padding: 41px 0 50px;
+    padding: 41px 0 100px;
     .items{
         margin-top: 20px;
         display: grid;
@@ -49,6 +49,7 @@
             justify-content: space-between;
             img{
                 margin: 0;
+                margin-right: 15px;
             }
             .content{
                 max-width: 450px;
