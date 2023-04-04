@@ -7,6 +7,7 @@
     position: relative;
     img{
         position: absolute;
+        z-index: 0;
     }
     .cross{
         top: 8%;

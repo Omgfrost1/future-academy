@@ -1,0 +1,50 @@
+.items{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    img{
+        position: relative;
+    }
+    .item{
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-right: 20px;
+        z-index: 5;
+        max-width: 280px;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        .info{
+            display: flex;
+            margin-bottom: 14px;
+            .photo{
+                margin-right: 10px;
+            }
+            .name{
+                font-weight: 700;
+            }
+            .prof{
+                font-weight: 400;
+                margin-top: 8px;
+                font-size: 14px;
+                color: #4F4F4F;
+                display: block;
+            }
+        }
+        .text{
+            line-height: 22px;
+            margin-bottom: 18px;
+        }
+        .rating{
+            display: flex;
+            align-items: center;
+            .star{
+                margin-right: 10px;
+            }
+            .num{
+                color: #4F4F4F;
+            }
+        }
+    }
+}

@@ -14,9 +14,9 @@ export const Peoples = (props: any) => {
     return (
         <div className={styles.inner}>
             <WhiteTitle title={props.title}/>
-            <div className={styles.list}>
-                {props.list}
-            </div>
+
+            <props.content/>
+           
 
             <Image src={cross} width={130} height={130} alt="cross" className={styles.cross}/>
             <Image src={triangle} width={98} height={82} alt="triangle" className={styles.triangle}/>
