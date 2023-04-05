@@ -1,14 +1,14 @@
 import Image from 'next/image';
+
 import { InputMask } from 'primereact/inputmask';
 import { InputText } from 'primereact/inputtext';
+
 import sova from '../sova/sova.svg';
 import styles from './helpForm.module.scss';
 
 export const HelpForm = () => {
     return (
-        <div className={styles.inner}> 
-        <div className='container'>
-            <div className={styles.box}>
+        <div className={styles.inner}>
             <div></div>
             <div></div>
             <div></div>
@@ -36,8 +36,6 @@ export const HelpForm = () => {
                     Отправить
                 </button>
             </form>
-            </div>
-            </div>
         </div>
     );
 };

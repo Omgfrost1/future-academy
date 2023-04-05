@@ -1,3 +1,65 @@
 .footer{
-    padding: 300px 0;
+    padding: 70px 0 56px;
+    background: #00093C;
+    color: #fff;
+    .items{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+       
+        .item{
+            max-width: 260px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &:not(:last-child){
+                margin-right: 40px;
+            }
+            .list_title{
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
+            .link{
+                font-weight: 400;
+                font-size: 14px;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .contacts{
+            padding-top: 50px;
+            .logo{
+                display: block;
+                margin-bottom: 44px;
+            }
+            .phone{
+                font-weight: 600;
+                font-size: 18px;
+                display: block;
+                margin-bottom: 12px;
+            }
+            .adress{
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .mail{
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
+            .socials{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                padding-right: 30px;
+            }
+        }
+        .to_info{
+            max-width: 200px;
+        }
+        
+    }
+    
 }

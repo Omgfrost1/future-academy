@@ -1,4 +1,4 @@
-.box{
+.inner{
     padding: 40px;
     box-shadow: 0px 0px 9px 1px rgba(40, 151, 236, 0.21);
     position: relative;
@@ -10,6 +10,8 @@
     border-radius: 20px;
     background-color: #fff;
     position: absolute;
+    margin-top: -25%;
+    color: #000;
     .sova{
         position: absolute;
         top: 8%;

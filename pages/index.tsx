@@ -19,7 +19,7 @@ export default function Home() {
         <main className={styles.main}>
          <Main/>
         </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }
