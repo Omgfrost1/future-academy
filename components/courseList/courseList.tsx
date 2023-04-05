@@ -125,16 +125,16 @@ export const coursesToOlds = [
 
 
 export const CourseList = (props:any) => {
-    const arrays = [coursesToChilds, coursesToTeens, coursesToOlds];
-    let activeArray = arrays[props.state];
+    const courses = [coursesToChilds, coursesToTeens, coursesToOlds];
+    let activeCourses = courses[props.state];
     
     useEffect(() => {
-        activeArray = arrays[props.state];
+        activeCourses = courses[props.state];
     }, [props.state]);
 
     return (
         <div className={styles.inner}>
-            {activeArray.map((course, i) => (
+            {activeCourses.map((course, i) => (
                 <a key={i} className={styles.item} href={course.link}>
                     {course.name}
                 </a>
