@@ -30,23 +30,6 @@ const right_list = [
     },
 ];
 
-// const left_list = [
-//     {
-//         img: book,
-//         text: 'Все курсы',
-//         link : '#',
-//     },
-//     {
-//         img: book,
-//         text: 'Все курсы',
-//         link : '#',
-//     },
-//     {
-//         img: book,
-//         text: 'Все курсы',
-//         link : '#',
-//     },
-// ];
 
 export const Nav = () => {
     return (

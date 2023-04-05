@@ -27,13 +27,13 @@ const items = [
     }
 ];
 
-export const Ages = () => {
-    const [active, setActive] = useState(0);
+export const Ages = (props:any) => {
+   
     
     return (
         <div className={styles.inner}>
             {items.map((item, i) => (
-                <div key={i} className={ active === i ? cl(styles.active, styles.item): styles.item} onClick={() => setActive(i)}>
+                <div key={i} className={ props.state === i ? cl(styles.active, styles.item): styles.item} onClick={() => props.setState(i)}>
                     <Image src={item.img} width={49} height={49} alt="item-img" className={styles.img}/>
                     <p className={styles.title}>
                         {item.title}

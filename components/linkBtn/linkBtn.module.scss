@@ -8,6 +8,10 @@
     max-width: 220px;
     width: 100%;
     display: inline-flex;
+    &:hover{
+        background-color: #27AAE1;
+        border-color: #27AAE1;
+    }
     .text{
         margin-right: 10px;
     }

@@ -1,42 +1,43 @@
+import { useEffect } from 'react';
 import styles from './courseList.module.scss';
 
-export const coursesToChilds = [
-    {
-        name : 'Робототехника',
-        link : '#',
-    },
-    {
-        name : 'Создание игр',
-        link : '#',
-    },
-    {
-        name : 'Web-разработка',
-        link : '#',
-    },
-    {
-        name : 'Мультимедиа',
-        link : '#',
-    },
-    {
-        name : 'Шахматы',
-        link : '#',
-    },
-    {
-        name : '3D-моделирование и дизайн',
-        link : '#',
-    },
-    {
-        name : 'Английский язык',
-        link : '#',
-    },
-    {
-        name : 'Блогинг',
-        link : '#',
-    },
-    {
-        name : 'Soft skills',
-        link : '#',
-    }
+export const coursesToChilds = [ 
+        {
+            name : 'Робототехника',
+            link : '#',
+        },
+        {
+            name : 'Создание игр',
+            link : '#',
+        },
+        {
+            name : 'Web-разработка',
+            link : '#',
+        },
+        {
+            name : 'Мультимедиа',
+            link : '#',
+        },
+        {
+            name : 'Шахматы',
+            link : '#',
+        },
+        {
+            name : '3D-моделирование и дизайн',
+            link : '#',
+        },
+        {
+            name : 'Английский язык',
+            link : '#',
+        },
+        {
+            name : 'Блогинг',
+            link : '#',
+        },
+        {
+            name : 'Soft skills',
+            link : '#',
+        }
 ]
 
 export const coursesToTeens = [
@@ -121,10 +122,19 @@ export const coursesToOlds = [
     }
 ]
 
-export const CourseList = () => {
+
+
+export const CourseList = (props:any) => {
+    const arrays = [coursesToChilds, coursesToTeens, coursesToOlds];
+    let activeArray = arrays[props.state];
+    
+    useEffect(() => {
+        activeArray = arrays[props.state];
+    }, [props.state]);
+
     return (
         <div className={styles.inner}>
-            {coursesToChilds.map((course, i) => (
+            {activeArray.map((course, i) => (
                 <a key={i} className={styles.item} href={course.link}>
                     {course.name}
                 </a>

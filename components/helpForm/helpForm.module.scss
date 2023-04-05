@@ -46,15 +46,17 @@
             max-width: 210px;
             width: 100%;
             border: none;
+            border: 2px solid #f0efef;
             background-color: #f0efef;
+            cursor: pointer;
             &::placeholder{
                 color: #4F4F4F;
                 font-weight: 400;
                 font-size: 14px;
             }
-            &:target{
-                font-weight: 400;
-                font-size: 14px;
+            &:focus{
+                border-color: #27AAE1;
+                cursor: default;
             }
         }
         .input_name{
