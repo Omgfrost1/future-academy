@@ -25,7 +25,7 @@ export const HelpForm = () => {
             </div>
             <form className={styles.form} action='#'>
             <InputText className={styles.input_name} keyfilter="alpha"  placeholder="Ваше имя" type="text" maxLength={50}/>
-            <InputMask className={styles.input_tel} mask="+ 9 (999) 999-99-99" maxLength={11} placeholder="Ваш телефон" type="tel"/>
+            <InputMask className={styles.input_tel} mask="+ 7 (999) 999-99-99" maxLength={11} placeholder="Ваш телефон" type="tel"/>
             <InputText className={styles.input_mail}  placeholder="Ваш e-mail" maxLength={30} type="email"/>
                 <p className={styles.text}>
                     Нажимая на кнопку, я соглашаюсь 
