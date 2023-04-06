@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import cl from 'classnames';
+import Link from 'next/link';
 
 import comp from './comp.svg';
 import news from './news.svg';
@@ -29,24 +30,24 @@ export const News = () => {
                         <p className={styles.text}>
                             В списке наших курсов вы сможете найти профессию и занятие по душе, изучить новое и получить практические знания, которые помогут получить работу мечты.
                         </p>
-                        <LinkBtn text="Подробнее" link="#"/>
+                        <LinkBtn text="Подробнее" link="/courses"/>
                     </div>
 
-                    <a className={cl(styles.item, styles.green)}>
+                    <Link className={cl(styles.item, styles.green)} href="#">
                         <Image src={news} width={68} height={68} alt="news" className={styles.news}/>
                         <p className={styles.title}>
                             Новости Академии
                         </p>
-                    </a>
+                    </Link>
 
-                    <a className={cl(styles.item, styles.pink)}>
+                    <Link className={cl(styles.item, styles.pink)} href="#">
                         <Image src={it} width={68} height={68} alt="it" className={styles.it}/>
                         <p className={styles.title}>
                             Мир IT
                         </p>
-                    </a>
+                    </Link>
 
-                    <a className={cl(styles.item, styles.yellow)}>
+                    <Link className={cl(styles.item, styles.yellow)} href="#">
                         <Image src={logo} width={97} height={97} alt="logo" className={styles.logo}/>
                         <div className={styles.content}>
                             <p className={styles.title}>
@@ -57,7 +58,7 @@ export const News = () => {
                                 в сфере информационных технологий
                             </p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

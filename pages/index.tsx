@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import { Header } from '../components/header/header';
-import { Footer } from '../components/footer/footer';
+
 import { Main } from './main'
-import styles from '../scss/index.module.scss';
 
 
 
@@ -15,11 +13,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-        <main className={styles.main}>
+    
          <Main/>
-        </main>
-      <Footer />
+        
     </>
   )
 }

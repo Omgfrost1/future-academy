@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import cl from 'classnames';
 import logo_white from '../logo/logo_white.svg';
 
@@ -74,12 +75,12 @@ export const Footer = (props:any) => {
 
                 <div className={styles.items}>
                     <div className={cl(styles.item,styles.contacts)}>
-                        <a href="#" className={styles.logo}>
+                        <Link href="#" className={styles.logo}>
                             <Image src={logo_white} width={100} height={71} alt="logo"/>
-                        </a>
-                        <a className={styles.phone} href='tel:8 800 950-33-98'>
+                        </Link>
+                        <Link className={styles.phone} href='tel:8 800 950-33-98'>
                             8 800 950-33-98
-                        </a>
+                        </Link>
                         <p className={styles.adress}>
                             г. Москва, ул. Ленина, д. 50
                         </p>
@@ -89,9 +90,9 @@ export const Footer = (props:any) => {
 
                         <div className={styles.socials}>
                             {socials.map((item :any, i :any) =>
-                                <a key={i} href={item.link} className={styles.link}>
+                                <Link key={i} href={item.link} className={styles.link}>
                                     <Image src={item.img} width={20} height={20} alt="img"/>
-                                </a>
+                                </Link>
                             )}
                         </div>
                         <p className={styles.copy}>
@@ -104,9 +105,9 @@ export const Footer = (props:any) => {
                             Детям
                         </p>
                         {coursesToChilds.map((course : any, i:any) =>
-                            <a key={i} className={styles.link} href={course.link}>
+                            <Link key={i} className={styles.link} href={course.link}>
                                 {course.name}
-                            </a>
+                            </Link>
                         )}
                     </div>
 
@@ -115,9 +116,9 @@ export const Footer = (props:any) => {
                             Подросткам
                         </p>
                         {coursesToTeens.map((course : any, i:any) =>
-                            <a key={i} className={styles.link} href={course.link}>
+                            <Link key={i} className={styles.link} href={course.link}>
                                 {course.name}
-                            </a>
+                            </Link>
                         )}
                     </div>
 
@@ -126,9 +127,9 @@ export const Footer = (props:any) => {
                             Взрослым
                         </p>
                         {coursesToOlds.map((course : any, i:any) =>
-                            <a key={i} className={styles.link} href={course.link}>
+                            <Link key={i} className={styles.link} href={course.link}>
                                 {course.name}
-                            </a>
+                            </Link>
                         )}
                     </div>
 
@@ -137,9 +138,9 @@ export const Footer = (props:any) => {
                             Информация
                         </p>
                         {info.map((course : any, i:any) =>
-                            <a key={i} className={styles.link} href={course.link}>
+                            <Link key={i} className={styles.link} href={course.link}>
                                 {course.name}
-                            </a>
+                            </Link>
                         )}
                     </div>
                 </div>

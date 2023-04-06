@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import logo_black from '../logo/logo_black.svg';
 import { Nav } from './navigation/nav';
 
@@ -9,9 +11,9 @@ export const Header = () => {
         <header className={styles.header}>
             <div className='container'>
                 <div className={styles.inner}>
-                    <a href="#" className={styles.logo}>
+                    <Link href="/" className={styles.logo}>
                         <Image src={logo_black} width={100} height={71} alt="logo"/>
-                    </a>
+                    </Link>
                     <Nav/>
                 </div>
             </div>

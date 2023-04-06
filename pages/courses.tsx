@@ -13,20 +13,15 @@ import { Footer } from '../components/footer/footer';
 import vr from '../components/sections/video/vr.jpg';
 import styles from '../scss/index.module.scss';
 
-export const Main = () => {
+const Main2 = () => {
     return (
         <>
         <Header/>
             <main className={styles.main}>
-                <Academy/>
-                <Choise/>
-                <Video img={vr} link={'https://youtu.be/Q6Lru2ZhaAE'}/>
-                <Stats/>
-                <News/>
-                <Peoples content={Reviews} title="Отзывы наших студентов"/>
-                <Welcome/>
+                
             </main>
-        <Footer />
+        
         </>
     );
 };
+export default Main2;

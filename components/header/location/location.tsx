@@ -1,6 +1,8 @@
 import { useState } from "react";
 import cl from "classnames";
 import Image from "next/image";
+import Link from 'next/link';
+
 import Loc from './loc.svg';
 import Arrow_up from './arrow_up.svg';
 import Arrow_down from './arrow_down.svg';

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect } from 'react';
 import styles from './courseList.module.scss';
 
@@ -135,9 +136,9 @@ export const CourseList = (props:any) => {
     return (
         <div className={styles.inner}>
             {activeCourses.map((course, i) => (
-                <a key={i} className={styles.item} href={course.link}>
+                <Link key={i} className={styles.item} href={course.link}>
                     {course.name}
-                </a>
+                </Link>
             ))}
         </div>
     );
