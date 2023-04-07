@@ -1,0 +1,32 @@
+.inner{
+    max-width: 280px;
+    width: 100%;
+    .title{
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    .item{
+        padding: 26px 10px;
+        border-top: 2px solid #e0e0e0;
+        .child{
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+
+            &:not(:last-child){
+                margin-bottom: 23px;
+            }
+            img{
+                margin-right: 10px;
+            }
+            .text{
+                color: #333333;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            .active{
+                color: #000;                
+            }
+        }
+    }
+}

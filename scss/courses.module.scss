@@ -1,0 +1,18 @@
+.inner{
+    padding: 36px 0 330px;
+    .content{
+        display: flex;
+        .left{
+            max-width: 280px;
+            width: 100%;
+            padding-top: 68px;
+            margin-right: 30px;
+        }
+        .right{
+            .subtitle{
+                font-weight: 600;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}

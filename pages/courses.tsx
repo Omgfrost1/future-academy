@@ -1,8 +1,18 @@
 import Head from 'next/head';
-import { Choise } from '../components/sections/choise/choise';
+import { useState } from 'react';
+import { SectionTitle } from '../components/section-title/section-title';
+import { CourseList } from '@/components/courseList/courseList';
+import { Ages } from '@/components/ages/ages';
+import { Filter } from '@/components/filter/filter';
+import { Programs } from '@/components/programs/programs';
+
+import styles from '../scss/courses.module.scss';
 
 
 const Сourses = () => {
+
+    const [active, setActive] = useState(0);
+
     return (
         <>
         <Head>
@@ -11,11 +21,24 @@ const Сourses = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
-            <Choise/>
-            <Choise/>
-            <Choise/>
-            <Choise/>
-            <Choise/>
+            <div className={styles.inner}>
+                <div className='container'>
+                    <SectionTitle title="Все программы обучения" color="black"/>
+                    <div className={styles.content}>
+                        <div className={styles.left}>
+                            <Filter/>
+                        </div>
+                        <div className={styles.right}>
+                            <Ages state={active} setState={setActive}/>
+                            <p className={styles.subtitle}>
+                                Направление
+                            </p>
+                            <CourseList state={active} setState={setActive}/>
+                            <Programs/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 };

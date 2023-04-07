@@ -28,7 +28,6 @@ const items = [
 ];
 
 export const Ages = (props:any) => {
-   
     
     return (
         <div className={styles.inner}>
