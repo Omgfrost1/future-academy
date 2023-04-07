@@ -1,0 +1,87 @@
+.inner{
+    padding: 94px 0 100px;
+    text-align: center;
+    .titles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        .title{
+            max-width: 280px;
+            width: 100%;
+            font-weight: 700;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e0e0e0;
+            cursor: pointer;
+        }
+        .active_title{
+            border-bottom: 2px solid #27AAE1 ;
+        }
+    }
+    .inputs_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 36px;
+        
+        input{
+            border-radius: 10px;
+            padding: 16px 20px;
+            max-width: 380px;
+            width: 100%;
+            border: none;
+            border: 2px solid #f0efef;
+            background-color: #DDDFE6;
+            cursor: pointer;
+
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            &::placeholder{
+                color: #4F4F4F;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            &:focus{
+                border-color: #27AAE1;
+                cursor: default;
+            }
+        }
+    }
+    .login_links_title{
+        margin-bottom: 20px;
+    }
+    .links{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 220px;
+        margin-bottom: 32px;
+        .link{
+            cursor: pointer;
+        }
+    }
+    .button{
+        color: #fff;
+        background-color: #F7941D;
+        max-width: 180px;
+        width: 100%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+            background-color: #FFAE4D;
+        }
+    }
+}
+.aside_sova{
+    position: absolute;
+    top: 22%;
+    left: 2%;
+}
+
+
+

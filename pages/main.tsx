@@ -7,6 +7,8 @@ import { Peoples } from '../components/sections/peoples/peoples';
 import { Reviews } from '../components/reviews/reviews';
 import { Welcome } from '../components/sections/welcome/welcome';
 
+import { Footer } from "@/components/footer/footer";
+
 
 import vr from '../components/sections/video/vr.jpg';
 
@@ -21,6 +23,7 @@ export const Main = () => {
             <News/>
             <Peoples content={Reviews} title="Отзывы наших студентов"/>
             <Welcome/>
+            <Footer/>
         </>
     );
 };

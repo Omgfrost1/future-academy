@@ -14,7 +14,6 @@
         position: relative;
         background-color: white;
         div{
-            font-weight: 600;
             &:not(:last-child){
                 margin-bottom: 30px;
             }
@@ -22,6 +21,9 @@
         
         .top_text{
             font-weight: 700;
+        }
+        .mid_text{
+            line-height: 24px;
         }
     }
     .img{
@@ -31,4 +33,7 @@
         z-index: 2;
         
     }
+}
+.bigSize{
+    max-width: 350px;
 }

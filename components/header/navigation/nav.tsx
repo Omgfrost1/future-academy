@@ -16,6 +16,7 @@ const right_list = [
         link : '/courses',
         img_widh: 20,
         img_height: 17,
+        header: 'black',
     },
     {
         text: 'Мероприятия',
@@ -55,7 +56,7 @@ export const Nav = () => {
                 <Link className={cl(styles.link, styles.phone)} href="tel:8 800 950-33-98">
                     8 800 950-33-98 
                 </Link>
-                <Link className={cl(styles.link, styles.profile)} href="#">
+                <Link className={cl(styles.link, styles.profile)} href="/login">
                     <Image src={profile} width={17} height={18} alt="profile" className={styles.profile_logo}/>
                     <span>Войти</span>
                 </Link>

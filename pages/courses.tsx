@@ -5,6 +5,7 @@ import { CourseList } from '@/components/courseList/courseList';
 import { Ages } from '@/components/ages/ages';
 import { Filter } from '@/components/filter/filter';
 import { Programs } from '@/components/programs/programs';
+import { Footer } from "@/components/footer/footer";
 
 import styles from '../scss/courses.module.scss';
 
@@ -39,6 +40,7 @@ const Сourses = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };
