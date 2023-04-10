@@ -6,14 +6,14 @@ import circle from '../academy/circle.svg';
 import right_line from '../academy/left_line.svg';
 import left_line from '../video/left_line.svg';
 
-import { WhiteTitle } from '../../white-title/whiteTitle';
+import { SectionTitle } from '../../section-title/section-title';
 
 import styles from './peoples.module.scss';
 
 export const Peoples = (props: any) => {
     return (
         <div className={styles.inner}>
-            <WhiteTitle title={props.title}/>
+            <SectionTitle title={props.title} color='#fff'/>
 
             <props.content/>
            

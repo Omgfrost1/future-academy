@@ -1,0 +1,51 @@
+.topSection {
+    height: 480px;
+    background: #00093C;
+
+    img{
+        position: absolute;
+    }
+
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        .top_img{
+            position: relative;
+           object-fit: cover;
+        }
+    }
+
+     .cross{
+            top: 11%;
+            left: -14%;
+        }
+        .cross_small{
+            top: 34%;
+            left: 85%;
+        }
+        .left_line{
+            top: 53%;
+            left: -18%;
+        }
+        .bottom_line{
+            top: 80%;
+            left: 24%;
+        }
+        .triangle{
+            top: 9%;
+            left: 106%;
+        }
+        .triangle_small{
+            top: 5%;
+            left: 65%;
+        }
+        .right_line{
+            top: 80%;
+            left: 94%;
+        }
+        .circle{
+            top: 65%;
+            left: 59%;
+        }
+
+}

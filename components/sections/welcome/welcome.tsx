@@ -5,7 +5,7 @@ import book from './book.svg';
 import teacher from './teacher.svg';
 import support from './support.svg';
 
-import { BlackTitle } from '@/components/black-title/blackTitle';
+import { SectionTitle } from '../../section-title/section-title';
 
 import styles from './welcome.module.scss';
 
@@ -32,7 +32,7 @@ export const Welcome = () => {
     return (
         <div className={styles.inner}>
             <div className='container'>
-                <BlackTitle title="Добро пожаловать в Академию будущего ХОД"/>
+                <SectionTitle title="Добро пожаловать в Академию будущего ХОД" color="black"/>
                 <div className={styles.items}>
                     {items.map((item, i) => 
                         <div key={i} className={styles.item}>
