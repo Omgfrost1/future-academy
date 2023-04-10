@@ -20,7 +20,7 @@ const right_list = [
     },
     {
         text: 'Мероприятия',
-        link : '#',
+        link : '/events',
     },
     {
         text: 'Базы знаний',

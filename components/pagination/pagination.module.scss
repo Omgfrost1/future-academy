@@ -1,0 +1,18 @@
+.pagination{
+    align-items: center;
+    display: flex;
+    margin-bottom: 12px;
+    a{
+        color: #828282;
+        font-weight: 400;
+        font-size: 12px;
+        display: block;
+
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+    img{
+        margin-right: 10px;
+    }
+}
