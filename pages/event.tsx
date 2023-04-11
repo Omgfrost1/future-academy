@@ -6,7 +6,8 @@ import cl from "classnames";
 import top_img from '../public/images/eventBG.jpg'
 
 import { TopSection } from '../components/sections/topSection/topSection';
-import { EventContent } from '../components/eventContent/eventContent';
+import { EventContent } from '../components/Event/eventContent/eventContent';
+import { ItemsList } from "@/components/Event/itemsList/itemsList";
 
 import { Footer } from "@/components/footer/footer";
 
@@ -30,7 +31,7 @@ const Event: FC<EventProps> = () => {
             </Head>
 
             <TopSection content={EventContent} img={top_img}/>
-           
+            <ItemsList/>
         </>
     );
 };

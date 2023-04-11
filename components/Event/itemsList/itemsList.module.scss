@@ -1,0 +1,31 @@
+.inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 50px;
+    .items{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            max-width: 246px;
+            width: 100%;
+            
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+
+            .img{
+                margin-bottom: 18px;
+            }
+            .title{
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 14px;
+            }
+            .text{
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+        
+    }
+}
