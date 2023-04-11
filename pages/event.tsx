@@ -11,6 +11,7 @@ import { ItemsList } from "@/components/Event/itemsList/itemsList";
 import { EventProgram } from "@/components/Event/eventProgram/eventProgram";
 import { Peoples } from "@/components/sections/peoples/peoples";
 import { EventManagers } from "@/components/Event/eventManagers/eventManagers";
+import { EventGallery } from "@/components/Event/eventGallery/eventGallery";
 
 import { Footer } from "@/components/footer/footer";
 
@@ -19,8 +20,6 @@ import styles from '../scss/event.module.scss';
 interface EventProps {
     
 }
-
-
 
 const Event: FC<EventProps> = () => {
 
@@ -37,6 +36,9 @@ const Event: FC<EventProps> = () => {
             <ItemsList/>
             <EventProgram/>
             <Peoples title='Мероприятие проводят' content={EventManagers}/>
+            <EventGallery/>
+
+            <Footer/>
         </>
     );
 };

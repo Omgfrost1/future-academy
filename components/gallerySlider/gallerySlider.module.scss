@@ -1,0 +1,30 @@
+.inner{
+    padding: 75px 0 80px;
+    text-align: center;
+
+    .text{
+        max-width: 980px;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: -20px;
+    }
+
+    .items{
+        display: flex;
+        justify-content: space-between;
+
+        .item{
+            cursor: pointer;
+
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.inner_with_padding{
+    padding-bottom: 360px;
+}
