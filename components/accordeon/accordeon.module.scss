@@ -1,0 +1,46 @@
+.item{
+    padding: 18px 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 1px rgba(40, 151, 236, 0.21);
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        .title{
+            font-size: 22px;
+        }
+        .cross_icon{
+            transition: all 0.3s linear;
+            
+        }
+        .active_cross{
+            transition: all 0.3s linear;
+            transform: rotateZ(45deg);
+        }
+    }
+    .text{
+        max-height: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: -15px;
+        box-sizing: content-box;
+        transition: padding-top 0.3s linear,max-height 0.3s linear;
+    }
+    .active{
+        padding-top: 0px;
+        max-height: 120px;
+        margin-bottom: 0;
+        transition: padding-top 0.3s linear, max-height 0.3s linear;
+    }
+}
+
+

@@ -13,6 +13,7 @@ import styles from './peoples.module.scss';
 export const Peoples = (props: any) => {
     return (
         <div className={styles.inner}>
+            
             <SectionTitle title={props.title} color='#fff'/>
 
             <props.content/>

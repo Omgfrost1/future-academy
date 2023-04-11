@@ -8,6 +8,9 @@ import top_img from '../public/images/eventBG.jpg'
 import { TopSection } from '../components/sections/topSection/topSection';
 import { EventContent } from '../components/Event/eventContent/eventContent';
 import { ItemsList } from "@/components/Event/itemsList/itemsList";
+import { EventProgram } from "@/components/Event/eventProgram/eventProgram";
+import { Peoples } from "@/components/sections/peoples/peoples";
+import { EventManagers } from "@/components/Event/eventManagers/eventManagers";
 
 import { Footer } from "@/components/footer/footer";
 
@@ -32,6 +35,8 @@ const Event: FC<EventProps> = () => {
 
             <TopSection content={EventContent} img={top_img}/>
             <ItemsList/>
+            <EventProgram/>
+            <Peoples title='Мероприятие проводят' content={EventManagers}/>
         </>
     );
 };

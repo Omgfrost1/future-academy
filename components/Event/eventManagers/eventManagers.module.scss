@@ -1,0 +1,48 @@
+.items{
+    display: flex;
+    justify-content: space-between;
+
+    .item{
+        max-width: 280px;
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        border-radius: 20px;
+        padding: 30px 25px 70px;
+        z-index: 2;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        
+
+        .photo{
+            margin-bottom: 35px;
+            position: relative;
+            &::before{
+                content: '';
+                background:  url('./background.svg');
+                top: -8%;
+                left: 19.7%;
+                position: absolute;
+                width: 140px;
+                height: 140px;
+            }
+            .img{
+                position: relative;
+                margin: auto;
+            }
+        }
+
+        .name{
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .text{
+            font-size: 14px;
+            line-height: 20px;
+            color: #4f4f4f;
+        }
+    }
+}
