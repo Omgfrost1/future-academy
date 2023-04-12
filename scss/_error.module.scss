@@ -1,0 +1,17 @@
+.inner{
+    padding: 92px 0 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image{
+        margin-bottom: 50px;
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        .text{
+            color: #00093c;
+            margin-right: 15px;
+        }
+    }
+}

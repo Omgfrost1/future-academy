@@ -30,22 +30,22 @@ const right_list = [
             [ 
                 {
                     text: 'Об академии',
-                    link: '#',
+                    link: '/about',
                 },
                 {
                     text: 'Новости',
-                    link: '#',
+                    link: '/news',
                 },
                 {
                     text: 'Контакты',
-                    link: '#',
+                    link: '/contacts',
                 },
             
             ]
     },
     {
         text: 'Карьера',
-        link : '#',
+        link : '/career',
     },
 ];
 

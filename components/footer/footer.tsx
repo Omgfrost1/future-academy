@@ -43,15 +43,15 @@ const socials:any = [
 const info = [
     {
         name : 'Об академии',
-        link : '#',
+        link : '/about',
     },
     {
         name : 'Мероприятия',
-        link : '#',
+        link : '/events',
     },
     {
         name : 'Новости',
-        link : '#',
+        link : '/news',
     },
     {
         name : 'База знаний',
@@ -59,11 +59,11 @@ const info = [
     },
     {
         name : 'Карьера',
-        link : '#',
+        link : '/career',
     },
     {
         name : 'Контакты',
-        link : '#',
+        link : '/contacts',
     }
 ]
 
