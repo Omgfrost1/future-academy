@@ -33,14 +33,14 @@ export const News = () => {
                         <LinkBtn text="Подробнее" link="/courses"/>
                     </div>
 
-                    <Link className={cl(styles.item, styles.green)} href="#">
+                    <Link className={cl(styles.item, styles.green)} href="/news">
                         <Image src={news} width={68} height={68} alt="news" className={styles.news}/>
                         <p className={styles.title}>
                             Новости Академии
                         </p>
                     </Link>
 
-                    <Link className={cl(styles.item, styles.pink)} href="#">
+                    <Link className={cl(styles.item, styles.pink)} href="/news">
                         <Image src={it} width={68} height={68} alt="it" className={styles.it}/>
                         <p className={styles.title}>
                             Мир IT

@@ -3,27 +3,76 @@
     justify-content: space-between;
     max-width: 1017px;
     width: 100%;
-    .right_list{
+    .left_list{
         max-width: 485px;
         width: 100%;
         display: flex;
         margin-right: 15px;
         justify-content: space-between;
-        .link{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .link_with_img{
-            padding-left: 26px;
+        align-items: center;
+        .item{
             position: relative;
-            .link_img{
-                position: absolute;
-                bottom: 10px;
-                left: 0;
+
+            &:hover{
+                .hover{
+                    display: block !important;
+                    .link{
+                        display: block;
+                    }
+                }
+            }
+            .link{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .link_with_book_img{
+                padding-left: 26px;
+                position: relative;
+                .link_img{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                }
+                
+            }
+            .link_with_arrow_img{
+                position: relative;
+                .arrow_img{
+                    position: absolute;
+                    right: 45%;
+                    bottom: -18%;
+                    transform: rotatez(90deg);
+                }
+            }
+        }
+        
+        .hover{
+            display: none !important;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            background-color: #fff;
+            z-index: 20;
+            border-radius: 10px;
+            top: 26px;
+            left: -19%;
+            width: 145%;
+            border: 1px solid #27AAE1;
+            padding: 10px 0 15px;
+            text-align: center;
+            .link{
+                display: none;
+                &:hover{
+                    background-color: #d3e8f1;
+                }
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
             }
         }
     }
-    .left_list{
+    .right_list{
         display: flex;
         align-items: center;
         max-width: 466px;

@@ -14,10 +14,8 @@
     .items{
         display: flex;
         justify-content: space-between;
-
         .item{
-            cursor: pointer;
-
+            cursor: pointer;         
             img{
                 border-radius: 20px;
             }

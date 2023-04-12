@@ -1,6 +1,7 @@
 import { Location } from '../location/location';
 
 import book from './book.svg';
+import arrow from '../../linkBtn/arrow.svg';
 import profile from './profile.svg';
 
 import cl from 'classnames';
@@ -11,20 +12,36 @@ import styles from './nav.module.scss';
 
 const right_list = [
     {
-        img: book,
+        book_img: book,
         text: 'Все курсы',
         link : '/courses',
-        img_widh: 20,
+        img_width: 20,
         img_height: 17,
-        header: 'black',
     },
     {
         text: 'Мероприятия',
         link : '/events',
     },
     {
-        text: 'Базы знаний',
-        link : '#',
+        arrow_img: arrow,
+        text: 'Информация',
+        link : '',
+        list: 
+            [ 
+                {
+                    text: 'Об академии',
+                    link: '#',
+                },
+                {
+                    text: 'Новости',
+                    link: '#',
+                },
+                {
+                    text: 'Контакты',
+                    link: '#',
+                },
+            
+            ]
     },
     {
         text: 'Карьера',
@@ -37,21 +54,62 @@ export const Nav = () => {
     return (
         <div className={styles.inner}>
 
-            <div className={styles.right_list}>
-                {right_list.map(link =>(
-                    link.img
-                    ? <Link className={cl(styles.link, styles.link_with_img)} href={link.link}>
-                        <Image src={link.img} width={link.img_widh} height={link.img_widh} alt="logo" className={styles.link_img}/>
-                        {link.text} 
-                        </Link>
-                    : <Link className={styles.link} href={link.link}>
-                        {link.text}
-                    </Link>
+            <div className={styles.left_list}>
+                {right_list.map((link, i) =>(
+                 
+                        <div key={i} className={styles.item}>
+
+                            
+                            { 
+                                link.book_img &&
+                                    <Link className={cl(styles.link, styles.link_with_book_img)} 
+                                            href={link.link}>
+                                        {link.text}
+                                        <Image src={link.book_img} width={link.img_width} height={link.img_height} alt="logo" className={styles.link_img}/>
+                                    </Link>
+                            }
+
+                            { 
+                                link.arrow_img &&
+                                    <Link className={cl(styles.link, styles.link_with_arrow_img)}
+                                    href={link.link}>
+                                        {link.text}
+                                        <Image src={link.arrow_img} width={10} height={10} alt="arrow" className={styles.arrow_img}/>
+                                    </Link>
+                            }
+
+                            {  
+                                !link.arrow_img && !link.book_img &&
+                                    <Link href={link.link}>
+                                        {link.text}
+                                    </Link>
+                            }
+                            
+                            
+
+                            {link.list 
+
+                            ? 
+
+                            <div className={styles.hover}>
+                                {link.list.map((link,i) =>
+                                    <Link key={i} className={cl(styles.link)} href={link.link}>
+                                    {link.text} 
+                                </Link>
+                                )}
+                            </div>
+
+                            : ""
+                        }
+                        </div>  
+
+                   
+                    
                         
                 ))}
             </div>
 
-            <div className={styles.left_list}>
+            <div className={styles.right_list}>
                 <Location/>
                 <Link className={cl(styles.link, styles.phone)} href="tel:8 800 950-33-98">
                     8 800 950-33-98 
