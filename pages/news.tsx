@@ -1,9 +1,10 @@
 import { FC } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import cl from "classnames";
 
-
+import { Pagination } from "@/components/pagination/pagination";
+import { SectionTitle } from "@/components/section-title/section-title";
+import { NewsItems } from "@/components/News/newsItems/newsItems";
 import { Footer } from "@/components/footer/footer";
 
 import styles from '../scss/news.module.scss';
@@ -23,9 +24,15 @@ const News: FC<NewsProps> = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            
+                <div className='container'>
+                    <div className={styles.inner}>
+                        <Pagination page='Новости' link='/news'/>
+                        <SectionTitle title='Новости ХОД Future Academy' color='black'/>
+                        <NewsItems/>
+                    </div>
+                </div>
 
-            {/* <Footer/> */}
+            <Footer/>
         </>
     );
 };
