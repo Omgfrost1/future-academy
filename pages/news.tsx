@@ -1,6 +1,5 @@
 import { FC } from "react";
 import Head from "next/head";
-import Image from "next/image";
 
 import { Pagination } from "@/components/pagination/pagination";
 import { SectionTitle } from "@/components/section-title/section-title";

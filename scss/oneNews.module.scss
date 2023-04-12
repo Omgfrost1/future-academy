@@ -1,0 +1,55 @@
+.inner{
+    padding: 20px 0 330px;
+    max-width: 980px;
+    width: 100%;
+    .date{
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        z-index: 2;
+    }
+    .top_text{
+        margin-bottom: 80px;
+    }
+    .mid_text{
+        margin-bottom: 40px;
+    }
+    .image_container{
+        position: relative;
+        z-index: 2;
+
+        .img{
+            margin-left: auto;
+            border-radius: 20px;
+            margin-bottom: 80px;
+        }
+
+        .left_line, .cross, .triangle, .right_line{
+            position: absolute;
+            z-index: -1;
+        }
+        .triangle{
+            top: -11%;
+            left: 12%;
+        }
+        .left_line{
+            top: 60%;
+            left: -3%;
+        }
+        .cross{
+            top: 65%;
+            right: -17%
+        }
+        .right_line{
+            top: -21%;
+            right: -32%;
+        }
+    }
+    
+}

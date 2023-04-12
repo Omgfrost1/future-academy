@@ -22,42 +22,42 @@ const items = [
         date: '16 ноября 2021',
         title: 'Заголовок новости',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus.',
-        link: '/oneNews',
+        link: '/news/1',
     },
     {
         img: img_2,
         date: '16 ноября 2021',
         title: 'Заголовок новости',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus.',
-        link: '/oneNews',
+        link: '/news/1',
     },
     {
         img: img_3,
         date: '16 ноября 2021',
         title: 'Заголовок новости',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus.',
-        link: '/oneNews',
+        link: '/news/1',
     },
     {
         img: img_4,
         date: '16 ноября 2021',
         title: 'Заголовок новости',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus.',
-        link: '/oneNews',
+        link: '/news/1',
     },
     {
         img: img_5,
         date: '16 ноября 2021',
         title: 'Заголовок новости',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus.',
-        link: '/oneNews',
+        link: '/news/1',
     },
     {
         img: img_6,
         date: '16 ноября 2021',
         title: 'Заголовок новости',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus.',
-        link: '/oneNews',
+        link: '/news/1',
     },
 ]
 
@@ -89,7 +89,7 @@ export const NewsItems: FC<NewsItemsProps> = () => {
                         </Link>
 
                         <Link href={item.link} className={styles.absolute_link}>
-                    
+
                         </Link>
                     </div>
                 </div>
