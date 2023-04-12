@@ -15,9 +15,10 @@
         }
     }
 
-     .cross{
+        .cross{
             top: 11%;
             left: -14%;
+            animation: cross 3s infinite ease-in-out alternate;
         }
         .cross_small{
             top: 34%;
@@ -34,6 +35,7 @@
         .triangle{
             top: 9%;
             left: 106%;
+            animation: cross 3s infinite ease-in-out alternate;
         }
         .triangle_small{
             top: 5%;
@@ -46,6 +48,14 @@
         .circle{
             top: 65%;
             left: 59%;
+            animation: cross 2s infinite ease-in-out alternate;
         }
 
+}
+
+@keyframes cross {from {
+	margin-top: -20px;
+} to {
+	margin-top: 20px;
+}
 }

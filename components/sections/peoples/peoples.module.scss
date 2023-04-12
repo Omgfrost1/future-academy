@@ -12,10 +12,13 @@
     .cross{
         top: 8%;
         left: 14%;
+        animation: cross 2s infinite ease-in-out alternate;
     }
     .triangle{
         left: 48%;
         top: 70%;
+        animation: cross 2.5s infinite ease-in-out alternate;
+
     }
     .right_line{
         left: 68%;
@@ -24,9 +27,17 @@
     .circle{
         top: 70%;
         left: 80%;
+        animation: cross 3s infinite ease-in-out alternate;
     }
     .left_line{
         top: 58%;
         left: 8%;
     }
+}
+
+@keyframes cross {from {
+	margin-top:-20px;
+} to {
+	margin-top: 20px;
+}
 }

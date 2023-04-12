@@ -11,6 +11,7 @@
     .cross{
         top: 22%;
         left: -13%;
+        animation: cross 3s infinite ease-in-out alternate;
     }
     .left_line{
         bottom: -44%;
@@ -31,6 +32,7 @@
     .cross_small{
         top: 30%;
         left: 89%;
+        animation: cross 1.5s infinite ease-in-out alternate;
     }
     .right_line{
         top: 75%;
@@ -39,6 +41,8 @@
     .circle{
         top: 10%;
         left: 50%;
+        animation: cross 2s infinite ease-in-out alternate;
+
     }
     .black_bg{
         background: #00093C;
@@ -72,4 +76,11 @@
         }
     }
        
+}
+
+@keyframes cross {from {
+	margin-top:-20px;
+} to {
+	margin-top: 20px;
+}
 }
