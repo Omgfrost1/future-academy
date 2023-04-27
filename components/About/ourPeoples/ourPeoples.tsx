@@ -1,14 +1,15 @@
 import { FC } from 'react';
+
 import { PeopleCard } from '@/components/PeopleCard/peopleCard';
 
-import photo_1 from './photo_1.png';
-import photo_2 from './photo_2.png';
-import photo_3 from './photo_3.png';
-import photo_4 from './photo_4.png';
+import photo_1 from '../../Event/eventManagers/photo_1.png';
+import photo_2 from '../../Event/eventManagers/photo_2.png';
+import photo_3 from '../../Event/eventManagers/photo_3.png';
+import photo_4 from '../../Event/eventManagers/photo_4.png';
 
-import styles from './eventManagers.module.scss';
+import styles from './ourPeoples.module.scss';
 
-interface EventManagersProps {
+interface OurPeoplesProps {
     
 }
 
@@ -33,16 +34,18 @@ const items = [
         name: 'Имя Фамилия',
         text: 'Выпускница Гарвардского Университета. Более 10 лет играет в шахматы и участвует в турнирах.'
     },
+ 
 ]
 
-export const EventManagers: FC<EventManagersProps> = () => {
-    return (
-
-        <div className='container'>
-            <div className={styles.items}>
-                {items.map((item, i) =>
-                    <PeopleCard key={i} img={item.img} name={item.name} text={item.text}/>   
-                )}
+export const OurPeoples: FC<OurPeoplesProps> = () => {
+    return ( 
+        <div className={styles.inner}>
+            <div className='container'>
+                <div className={styles.items}>
+                    {items.map((item, i) => 
+                        <PeopleCard key={i} img={item.img} name={item.name} text={item.text}/>   
+                    )}
+                </div>
             </div>
         </div>
      );

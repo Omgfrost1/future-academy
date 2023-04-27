@@ -1,0 +1,19 @@
+.inner{
+    padding: 74px 0 58px;
+    .items{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+        .item{
+            max-width: 180px;
+            width: 100%;
+            line-height: 24px;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            img{
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

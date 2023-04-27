@@ -1,0 +1,33 @@
+.inner{
+    padding: 160px 0 65px;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        .biography{
+            max-width: 380px;
+            width: 100%;
+            img{
+                border-radius: 20px;
+                margin-bottom: 24px;
+            }
+            .name{
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+        }
+        .info{
+            padding: 20px 0;
+            max-width: 680px;
+            .text{
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 26px;
+            }
+        }
+        .subtitle{
+            color: #4f4f4f;
+            font-size: 14px;
+        }
+    }
+}
