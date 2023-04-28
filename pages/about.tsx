@@ -10,6 +10,7 @@ import { Peoples } from "@/components/sections/peoples/peoples";
 import { OurPeoples } from "@/components/About/ourPeoples/ourPeoples";
 import { OurPrograms } from "@/components/About/ourPrograms/ourPrograms";
 import { Partners } from "@/components/About/partners/partners";
+import { ClickCards } from '@/components/About/clickCards/clickCards';
 
 import { Footer } from "@/components/footer/footer";
 
@@ -39,7 +40,8 @@ const About: FC<AboutProps> = () => {
             <Peoples title="Наши люди" content={OurPeoples}/>
             <OurPrograms/>
             <Partners/>
-            {/* <Footer/> */}
+            <ClickCards/>
+            <Footer/>
         </>
     );
 }
