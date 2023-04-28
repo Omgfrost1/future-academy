@@ -84,7 +84,7 @@ export const Reviews = () => {
     
     return (
         <Swiper className={styles.items}
-        spaceBetween={50}
+        spaceBetween={60}
         slidesPerView={6}
         autoplay={{
             delay: 3000,

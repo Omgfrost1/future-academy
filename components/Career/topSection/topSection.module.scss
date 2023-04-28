@@ -1,0 +1,83 @@
+.inner{
+    height: 480px;
+    background-color: #00093C;
+    .content{
+        padding: 120px 0 50px;
+        display: flex;
+        flex-direction: column;
+        height: 480px;
+        color: #fff;
+        position: relative;
+        .title{
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 51px;
+            margin-bottom: 40px;
+        }
+        .subtitle{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .link{
+            font-weight: 700;
+            font-size: 14px;
+            background: #F7941D;
+            padding: 14px;
+            max-width: 286px;
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            transition: all 0.2s linear;
+            cursor: pointer;
+            margin-top: auto;
+
+            &:hover{
+                background: #FFAE4D;
+            }
+        }
+
+        img{
+            position: absolute;
+        }
+
+        .cross{
+            top: 14%;
+            left: -15%
+        }
+
+        .left_line{
+            top: 58%;
+            left: -13%
+        }
+
+        .triangle{
+            top: 64%;
+            left: 42%
+        }
+
+        .circle{
+            top: 18%;
+            left: 62%
+        }
+
+        .cross_small{
+            top: 35%;
+            right: -15%
+        }
+
+        .man_cross{
+            top: 8%;
+            right: 10%;
+        }
+        .girl_circle{
+            top: 49%;
+            right: 22%;
+        }
+        .man_triangle{
+            top: 46%;
+            right: -5%;
+        }
+    }
+}

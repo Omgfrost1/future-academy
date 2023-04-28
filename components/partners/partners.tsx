@@ -12,7 +12,7 @@ import avito from './avito.png';
 import styles from './partners.module.scss';
 
 interface PartnersProps {
-    
+    title: string;
 }
 
 const items = [
@@ -55,11 +55,11 @@ const items = [
  
 ]
 
-export const Partners: FC<PartnersProps> = () => {
+export const Partners: FC<PartnersProps> = ({title}) => {
     return ( 
         <div className={styles.inner}>
             <div className='container'>
-                <SectionTitle color='black' title='Наши партнеры'/>
+                <SectionTitle color='black' title={title}/>
                 <div className={styles.items}>
                     {items.map((item, i) => 
                         <div key={i} className={styles.item}>

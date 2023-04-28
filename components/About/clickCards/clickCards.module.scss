@@ -12,6 +12,8 @@
             border-radius: 20px;
             position: relative;
             text-align: center;
+            transition: all 0.1s linear;
+            
             &:not(:last-child){
                 margin-right: 20px;
             }
