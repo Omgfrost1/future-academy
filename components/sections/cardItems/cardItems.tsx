@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import Image from 'next/image';
 
 import process from './process.svg';
@@ -7,7 +8,7 @@ import support from './support.svg';
 
 import { SectionTitle } from '../../section-title/section-title';
 
-import styles from './welcome.module.scss';
+import styles from './cardItems.module.scss';
 
 const items = [
     {
@@ -27,12 +28,15 @@ const items = [
         content: 'Сопровождение на всех этапах. От начала обучения до трудоустройства',
     },
 ]
+interface CardItemsProps {
+    title: string;
+}
 
-export const Welcome = () => {
+export const CardItems : FC<CardItemsProps> = ({title}) => {
     return (
         <div className={styles.inner}>
             <div className='container'>
-                <SectionTitle title="Добро пожаловать в Академию будущего ХОД" color="black"/>
+                <SectionTitle title={title} color="black"/>
                 <div className={styles.items}>
                     {items.map((item, i) => 
                         <div key={i} className={styles.item}>

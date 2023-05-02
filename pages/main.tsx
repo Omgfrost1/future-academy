@@ -5,7 +5,7 @@ import { Stats } from '../components/sections/stats/stats';
 import { News } from '../components/sections/news/news';
 import { Peoples } from '../components/sections/peoples/peoples';
 import { Reviews } from '../components/reviews/reviews';
-import { Welcome } from '../components/sections/welcome/welcome';
+import { CardItems } from '../components/sections/cardItems/cardItems';
 
 import { Footer } from "@/components/footer/footer";
 
@@ -22,7 +22,7 @@ export const Main = () => {
             <Stats/>
             <News/>
             <Peoples content={Reviews} title="Отзывы наших студентов"/>
-            <Welcome/>
+            <CardItems title='Добро пожаловать в Академию будущего ХОД'/>
             <Footer/>
         </>
     );
