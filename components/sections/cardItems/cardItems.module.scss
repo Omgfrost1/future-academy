@@ -1,5 +1,5 @@
 .inner{
-    padding: 85px 0 390px;
+    padding: 85px 0 50px;
     .items{
         margin-top: 60px;
         display: flex;
@@ -15,4 +15,8 @@
             }
         }
     }
+}
+
+.innerWithPadding{
+    padding-bottom: 330px;
 }

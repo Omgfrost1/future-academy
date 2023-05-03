@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import cl from 'classnames';
 
 import process from './process.svg';
 import book from './book.svg';
@@ -29,12 +30,13 @@ const items = [
     },
 ]
 interface CardItemsProps {
-    title: string;
+    title: string,
+    bottom: boolean
 }
 
-export const CardItems : FC<CardItemsProps> = ({title}) => {
+export const CardItems : FC<CardItemsProps> = ({title},{bottom}) => {
     return (
-        <div className={styles.inner}>
+        <div className={ bottom = true ? cl(styles.inner, styles.innerWithPadding) : styles.inner}>
             <div className='container'>
                 <SectionTitle title={title} color="black"/>
                 <div className={styles.items}>

@@ -6,6 +6,7 @@ import { ItemsList } from "@/components/Event/itemsList/itemsList";
 import { Partners } from "@/components/partners/partners";
 import { Peoples } from "@/components/sections/peoples/peoples";
 import { Reviews } from "@/components/reviews/reviews";
+import { CardItems } from "@/components/sections/cardItems/cardItems";
 import { Footer } from "@/components/footer/footer";
 
 
@@ -30,7 +31,8 @@ const Career: FC<CareerProps> = () => {
 
             <Partners title='Компании, где работают наши студенты'/>
             <Peoples content={Reviews} title="Истории успеха"/>
-            {/* <Footer/> */}
+            <CardItems title="Помогаем с трудоустройствовом" bottom={true}/>
+            <Footer/>
         </>
     );
 }

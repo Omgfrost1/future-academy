@@ -22,7 +22,7 @@ export const Main = () => {
             <Stats/>
             <News/>
             <Peoples content={Reviews} title="Отзывы наших студентов"/>
-            <CardItems title='Добро пожаловать в Академию будущего ХОД'/>
+            <CardItems title='Добро пожаловать в Академию будущего ХОД' bottom={true}/>
             <Footer/>
         </>
     );

@@ -1,0 +1,35 @@
+.inner{
+    padding: 20px 0 330px;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        .contacts{
+            margin-top: 10px;
+            .items{
+                margin-bottom: 80px;
+                .item{
+                    &:not(:last-child){
+                        margin-bottom: 40px;
+                    }
+                    .img{
+                        margin-bottom: 10px;
+                    }
+                    .telephone{
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .links{
+                display: flex;
+                margin-bottom: 20px;
+                .link{
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
