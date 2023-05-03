@@ -1,0 +1,20 @@
+.link{
+    font-weight: 700;
+    font-size: 14px;
+    background: #F7941D;
+    padding: 14px;
+    max-width: 286px;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    margin-top: auto;
+    color: #fff;
+    &:hover{
+        background: #FFAE4D;
+    }
+}
+.center{
+    margin: 0 auto;
+}

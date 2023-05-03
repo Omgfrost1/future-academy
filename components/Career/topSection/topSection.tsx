@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+
+import { QuestionButton } from '../questionButton/questionButton';
 
 import cross from '@/components/sections/academy/cross.svg';
 import left_line from '@/components/sections/academy/left_line.svg';
@@ -11,7 +12,6 @@ import cross_small from '@/components/sections/academy/cross.svg';
 import man_cross from './man_cross.png';
 import girl_circle from './girl_circle.png';
 import man_triangle from './man_triangle.png';
-
 
 
 import styles from './topSection.module.scss';
@@ -32,10 +32,8 @@ export const TopSection: FC<TopSectionProps> = () => {
                     <p className={styles.subtitle}>
                         Карьерный центр ХОД Future Academy
                     </p>
-
-                    <Link className={styles.link} href='#'> 
-                        Задать вопрос о трудоустройстве
-                    </Link>
+                    
+                    <QuestionButton/>
 
                     <Image src={cross} className={styles.cross} width={130} height={130} alt='image'/>
                     <Image src={left_line} className={styles.left_line} width={338} height={131} alt='image'/>

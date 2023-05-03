@@ -7,6 +7,9 @@ import { Partners } from "@/components/partners/partners";
 import { Peoples } from "@/components/sections/peoples/peoples";
 import { Reviews } from "@/components/reviews/reviews";
 import { CardItems } from "@/components/sections/cardItems/cardItems";
+import { WorkStats } from "@/components/Career/workStats/workStars";
+import { YourPath } from "@/components/Career/yourPath/yourPath";
+import { Vacancy } from "@/components/Career/vacancy/vacancy";
 import { Footer } from "@/components/footer/footer";
 
 
@@ -28,10 +31,13 @@ const Career: FC<CareerProps> = () => {
             </Head>
             <TopSection/>
             <ItemsList/>
-
-            <Partners title='Компании, где работают наши студенты'/>
+            <WorkStats/>
+            <YourPath/>
+            <Vacancy/>
+            <Partners title='Компании где работают уже наши студенты'/>
             <Peoples content={Reviews} title="Истории успеха"/>
             <CardItems title="Помогаем с трудоустройствовом" bottom={true}/>
+            
             <Footer/>
         </>
     );

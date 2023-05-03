@@ -8,11 +8,11 @@ import { InputText } from 'primereact/inputtext';
 import { Sova } from '../components/sova/sova';
 import { Footer } from "@/components/footer/footer";
 
-import vk from '../public/vk.svg';
-import inst from '../public/inst.svg';
-import facebook from '../public/facebook.svg';
-import youtube from '../public/youtube.svg';
-import telegram from '../public/telegram.svg';
+import vk from '../public/contacts-icons/vk.svg';
+import inst from '../public/contacts-icons/insta.svg';
+import facebook from '../public/contacts-icons/facebook.svg';
+import youtube from '../public/contacts-icons/youtube.svg';
+import telegram from '../public/contacts-icons/telegram.svg';
 
 
 import styles from '../scss/login.module.scss';
@@ -110,7 +110,6 @@ const showReg = () => {
                             <InputText className={styles.input_password} placeholder="Ваш пароль"  maxLength={50}/>
                             <InputText className={styles.input_mail} placeholder="Ваш e-mail" maxLength={30} type="email"/>
                             <InputMask className={styles.input_tel} mask="+ 7 (999) 999-99-99" maxLength={11} placeholder="Ваш телефон" type="tel"/>
-                            <InputMask className={styles.input_tel} mask="+ 7 (999) 999-99-99" maxLength={11} placeholder="Подтвердите телефон" type="tel"/>
                         </div>
                      }
                     

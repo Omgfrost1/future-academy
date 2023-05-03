@@ -1,0 +1,29 @@
+.inner{
+    padding: 25px 0 110px;
+    .text{
+        margin-bottom: 38px;
+        line-height: 26px;
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 980px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        max-width: 940px;
+        width: 100%;
+        .item{
+            &:not(:last-child){
+                margin-right: 60px;
+            }
+
+            img{
+                margin-bottom: 10px;
+            }
+            .item_text{
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+    }
+}
