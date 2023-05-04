@@ -1,0 +1,25 @@
+.inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 516px;
+    margin-bottom: 35px;
+    .item{
+        color: #fff;
+        position: relative;
+        
+        &:not(:last-child){
+            margin-bottom: 35px;
+        }
+
+        img{
+            position: relative;
+            margin-bottom: 7px;
+        }
+
+        .price{
+            font-weight: 700;
+            font-size: 28px;
+        }
+    }
+}

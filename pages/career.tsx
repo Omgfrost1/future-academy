@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Head from "next/head";
 
-import { TopSection } from "@/components/Career/topSection/topSection";
+import { CareerTopSection } from "@/components/Career/careerTopSection/careerTopSection";
 import { ItemsList } from "@/components/Event/itemsList/itemsList";
 import { Partners } from "@/components/partners/partners";
 import { Peoples } from "@/components/sections/peoples/peoples";
@@ -29,7 +29,7 @@ const Career: FC<CareerProps> = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <TopSection/>
+            <CareerTopSection/>
             <ItemsList/>
             <WorkStats/>
             <YourPath/>

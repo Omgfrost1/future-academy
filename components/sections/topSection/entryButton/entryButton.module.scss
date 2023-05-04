@@ -1,0 +1,15 @@
+.link{
+    max-width: 286px;
+    background: #f7941d;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 20px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s linear;
+    &:hover{
+        background: #FFAE4D;
+    }
+}

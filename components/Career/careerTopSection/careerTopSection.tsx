@@ -14,14 +14,14 @@ import girl_circle from './girl_circle.png';
 import man_triangle from './man_triangle.png';
 
 
-import styles from './topSection.module.scss';
+import styles from './careertopSection.module.scss';
 
 
-interface TopSectionProps {
+interface CareerTopSectionProps {
     
 }
  
-export const TopSection: FC<TopSectionProps> = () => {
+export const CareerTopSection: FC<CareerTopSectionProps> = () => {
     return ( 
         <div className={styles.inner}>
             <div className='container'>

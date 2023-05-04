@@ -16,6 +16,7 @@ import styles from './topSection.module.scss';
 interface TopSection {
     content: any,
     img: any,
+    left_image?: any,
 }
 
 
@@ -34,7 +35,12 @@ export const TopSection: FC<TopSection> = (props) => {
                 </div>
 
 
-                <Image src={cross} width={144} height={144} alt="cross" className={styles.cross}/>
+                { props.left_image 
+                    ? 
+                    props.left_image 
+                    :
+                    <Image src={cross} width={144} height={144} alt="cross" className={styles.cross}/>
+                }
                 <Image src={left_line} width={127} height={267} alt="left-line" className={styles.left_line}/>
                 <Image src={bottom_line} width={338} height={131} alt="bottom-line" className={styles.bottom_line}/>
                 <Image src={circle} width={128} height={128} alt="circle" className={styles.circle}/>
